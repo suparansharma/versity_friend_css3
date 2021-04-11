@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0 ;
+}
+
+
+.top-friends{
+
+    display: grid;
+    
+    grid-gap: 30px;
+    margin-top: 20px;
+    place-items: center;
+}
+
+.top-friends{
+
+    grid-template-columns: repeat(3,1fr);
+}
+
+.friend {
+
+    display: flex;
+    align-items: center;
+}
+
+.friend img{
+
+    height: 50px;
+    margin-right: 20px;
+}
+
+
+@media (max-width:992px){
+    .top-friends{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    
+}
+
+@media (max-width:668px){
+    .top-friends{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    
+}
